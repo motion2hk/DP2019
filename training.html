@@ -16,6 +16,19 @@
                 color: red;
             }
             /* CSS 주석 */
+            *{
+                font-weight: bold;
+                /* 전체 선택자 : CSS초기화에 사용 */
+            }
+            li{
+                color: blue;
+            }
+            .class_name{
+                color: green;
+            }
+            #id_name{
+                color: pink;
+            }
         </style>
         <link rel="stylesheet" type="text/css" href="default.css" />
     </head>
@@ -47,8 +60,8 @@
 
         <ul>
             <!--unordered list/비순차적 목록/순서가 없다-->
-            <li>설탕</li>
-            <li>소금</li>
+            <li class="class_name">설탕</li>
+            <li id="id_name">소금</li>
             <li>물</li>
         </ul>
         <ol>
@@ -105,10 +118,10 @@
             <thead>
                 <tr>
                     <th>제목1</th>
-                  <th>제목2</th>
-                  <th>제목3</th>
-                  <th>제목4</th>
-                  <th>제목5</th>
+                    <th>제목2</th>
+                    <th>제목3</th>
+                    <th>제목4</th>
+                    <th>제목5</th>
                  </tr>
             </thead>
             
