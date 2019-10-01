@@ -41,6 +41,9 @@
 
             div>li{ text-decoration: underline;}
             /* 자식 선택자 : div의 자식(child) li */
+
+            div,ul,li{ font-weight: bold;}
+            /* ㅅㅓㄴ택자 조합: div와 ul과 li */
         </style>
     </head>
     <body>
@@ -69,5 +72,118 @@
                 <li>리스트4</li>
             </ul>
         </div>
+
+        <style>
+            #box_model,#inline_model{
+                background-color: gray;
+                width: 100px;
+                height: 100px;
+                margin: 30px; /*바깥여백*/
+                border: solid 1px black;
+                /* 경계선: 실선 1두께 검은색; */
+                padding: 20px; /* 안쪽여백 */
+            }
+        </style>
+        <div id="box_model">박스모델</div>
+        <span id="inline_model">인라인모델</span>
+
+        <style>
+            #box2{
+                margin: 30px 20px 10px 5px;
+                /* 위 오 아래 왼 */
+                margin: 50px 20px;
+                /* 상하 좌우 */
+                margin-top: 30px;
+                margin-right: 20px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                /* padding, border도 동일 */
+            }
+        </style>
+        <div id="box2">방향별 여백</div>
+
+        <style>
+        #css_target{
+            color: red;
+        }
+        .css_class{
+            color: blue;
+        }
+        </style>
+        <div class="css_class" id="css_target"
+        style="color: green;">겹침과 개별성</div>
+
+        <style>
+            #color_sample{
+                color: black;
+                color: #000; /* 컬러코드 #rgb */
+                color: #606bcd; /* #rrggbb, 0~9 a~f */
+                color: rgb(0,0,255); /* 0~255 */
+                color: rgb(0%,0%,100%); /* 0%~100% */
+            }
+        </style>
+        <div id="color_sample">색상</div>
+        
+        <style>
+            #position_target{
+                /* static, relative, absolute, fixed */
+                position: static; /* 정적인 (기본) */
+                /* relative 관계적 (위치지정가능) */
+                position: absolute; /* 절대적인 */
+                /* top right bottom left 위치지정가능 */
+                top: 50px;
+                left: 50px;
+                position: fixed; /* 고정형 */
+
+            }
+        </style>
+        <div id="position_target">position</div>
+
+        <style>
+            #font_target{
+                font-family: futura, Algerian, "돋움", Dotum, "굴림", Gulim, sans-serif;
+                font-size: 30px;
+                /* normal, light, bold, bolder */
+                /* 100, 200, 300, 400, 500 */
+                font-style:italic; /* 기울임꼴 */
+                font-variant:small-caps;
+                text-align: center; /* 글자 가운데로(inline) */
+
+            }
+        </style>
+        <div id="font_target">
+            font_family
+            AbcdEfgh
+        </div>
+
+        <style>
+            #line_target{
+                line-height: 50px; /* 줄높이지정 */
+                vertical-align: top; /* 상하정렬: 상단 */
+                text-decoration: underline; /* 글자꾸미기: 밑줄 */
+                /* underline overline line-through */
+                letter-spacing: 10px; /* 자간(글자사이의 간격) */
+                text-indent: 10px;
+                text-transform: uppercase; /* 대문자로 표현하기 */
+                /* uppercase lowercase */
+                white-space: pre; /* 띄어쓰기, 엔터 모두다 그대로 */
+            }
+        </style>
+        <div id="line_target">
+            content content content content content content content 
+            content content content content content content content 
+            content content content content content content content 
+        </div>
+
+        <style>
+            @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+            @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+            #google_font{
+                font-family: 'Nanum Pen Script', cursive;
+                font-family: 'Mansalva', cursive;
+            }
+        </style>
+        google font
+        <div id="google_font">google font</div>
     </body>
 </html>
