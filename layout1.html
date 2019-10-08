@@ -5,53 +5,259 @@
         <meta charset="utf-8" />
         <style>
             header,div,nav,ul,li,footer{
-                border: solid 1px black;
-                margin: 15px;
+                /* border: solid 1px black; */
+                /* margin: 15px; */ }
+            header>ul>li{
+                float: left; /* 왼쪽 기준으로 둥둥 떠다니게, 흐르듯이 배치 */
+                list-style-type: none; /* li 기본 표시(동그라미) 없음(none) */
+                padding-left: 10px;
+                padding-right: 10px;
+                border-right: solid 2px gray; 
+                /* 경계선: 실선 2px 회색; */
             }
+            header>ul>li:nth-child(5){
+                border: none;
+            }
+            header>ul {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 100px;
+                margin-right: 100px;
+                padding: 0px;
+            }
+            #zoom {
+                margin: 10px;
+            }
+            .clear {clear:both; height: 0; overflow: hidden;}
+            /* 클래스명이 clear라면 (지움:양쪽; 높이:0; 넘치면:숨김;) */
+            .float_left{ float: left; }
+            .float_right{ float: right; }
+            h1{ margin: 0;}
+            #navigation>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            h2{
+                margin: 0px;
+            }
+            #navigation>ul{
+                margin-top: 6px;
+                margin-bottom: 6px;
+            }
+            #navigation{
+                background-color: #eee;
+            }
+        #body>section:nth-child(1){
+            background-color: #98f;
+        }
+        #body>section:nth-child(2){
+            background-color: #5d9;
+        }
+        #body>section:nth-child(3){
+            background-color: #f76;
+        }
+        #body>section:nth-child(4){
+            background-color: #ec5;
+        }
+        #body>section>div{
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            /* 가로 길이 지정후 left: auto, right: auto하면 블록이 가운데로 이동함 */
+        }
+        h3{
+            color: white;
+        }
+        dd{
+            margin: 0px;
+        }
+        .part{
+            float: left;
+            width: 480px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        dt{
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        footer #n_list li{
+            float: left; /* 왼쪽 기준으로 둥둥 떠다니게, 흐르듯이 배치 */
+            list-style-type: none; /* li 기본 표시(동그라미) 없음(none) */
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right: solid 2px gray; 
+            /* 경계선: 실선 2px 회색; */
+        }
+        footer #n_list li:nth-child(6){
+            border: none;
+        }
         </style>
     </head>
     <body>
         <a href="index.html">돌아가기</a>
         <div id="wrap">
             <header>
-                <h1 id="logo">
+                <h1 class="float_left" id="logo">
                     <img src="images/layout1_head_logo.jpg" alt="logo">
                 </h1>
-                <ul id="head_list">
+                <ul class="float_left" id="head_list">
                     <li>ABOUT</li>
                     <li>SERVICES</li>
                     <li>WORKS</li>
+                    <li>BLOG</li>
                     <li>CONTACT US</li>
+                    <div class="clear"></div>
                 </ul>
+                <div class="float_right" id="zoom">
+                    <img src="images/layout1_head_zoom.jpg" alt="zoom">
+                </div>
+                <div class="clear"></div>
             </header>
-            <nav>
-                <h2 id="navi_title">See Our Works</h2>
-                <ul>
+            <nav id="navigation">
+                <h2 class="float_left" id="navi_title">See Our Works</h2>
+                <ul class="float_right">
                     <li>Web Design</li>
                     <li>Icons</li>
                     <li>Illustlations</li>
                     <li>Mics</li>
+                    <div class="clear"></div>
                 </ul>
+                <div class="clear"></div>
             </nav>
             <div id="body">
                 <section>
-                    <h3>Web Design</h3>
                     <div>
-                        <!-- 그림, 제목, 내용(글) -->
-                        <img src="images/layout1_img1.jpg" alt="img1">
-                        <dl>
-                            <dt>Lorem ipsum dolor sit amet</dt>
-                            <dd>
-                                Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
-                            </dd>
-                        </dl>
+                        <h3>Web Design</h3>
+                            <div class="part">
+                                <!-- 그림, 제목, 내용(글) -->
+                                <img src="images/layout1_img1.jpg" alt="img1">
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="part">
+                                <!-- 그림, 제목, 내용(글) -->
+                                <img src="images/layout1_img1.jpg" alt="img1">
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
                     </div>
+                    <div class="clear"></div>
                 </section>
-                <section></section>
-                <section></section>
-                <section></section>
+                <section>
+                    <div>
+                        <h3>Icons</h3>
+                            <div class="part">
+                                <!-- 그림, 제목, 내용(글) -->
+                                <img src="images/layout1_img1.jpg" alt="img1">
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="part">
+                                <!-- 그림, 제목, 내용(글) -->
+                                <img src="images/layout1_img1.jpg" alt="img1">
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+                <section>
+                    <div>
+                        <h3>Illustrations</h3>
+                            <div class="part">
+                                <!-- 그림, 제목, 내용(글) -->
+                                <img src="images/layout1_img1.jpg" alt="img1">
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="part">
+                                <!-- 그림, 제목, 내용(글) -->
+                                <img src="images/layout1_img1.jpg" alt="img1">
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+                <section>
+                    <div>
+                        <h3>Miscellaneous</h3>
+                            <div class="part">
+                                <!-- 그림, 제목, 내용(글) -->
+                                <img src="images/layout1_img1.jpg" alt="img1">
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="part">
+                                <!-- 그림, 제목, 내용(글) -->
+                                <img src="images/layout1_img1.jpg" alt="img1">
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                    </div>
+                    <div class="clear"></div>
+                </section>
             </div>
-            <footer></footer>
+            <footer>
+                <div>
+                    <ul id="n_list">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Sercices</li>
+                        <li>Work</li>
+                        <li>Blog</li>
+                        <li>Contact Us</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
+                    <div>the loges in the design are the property 
+                    of their respective owners/copyright holders.</div>
+                    <ul id="i_list">
+                        <li><img src="images/layout1_footer_icon1.png" alt="facebook"></li>
+                        <li><img src="images/layout1_footer_icon2.png" alt="instagram"></li>
+                        <li><img src="images/layout1_footer_icon3.png" alt="twitter"></li>
+                        <li><img src="images/layout1_footer_icon4.png" alt="pinterest"></li>
+                        <li><img src="images/layout1_footer_icon5.png" alt="mola"></li>
+                        <li><img src="images/layout1_footer_icon6.png" alt="google"></li>
+                    </ul>
+                </div>
+                
+            </footer>
         </div>
     </body>
 </html>
