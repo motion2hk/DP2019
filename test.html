@@ -4,40 +4,209 @@
         <title>test</title>
         <meta charset="utf-8">
         <style>
+            @import url('https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR|Poppins&display=swap');
+            body{
+                margin: 0px;
+                background-image: url(./images2/BG.jpg);
+                background-size: cover;
+            }
+            header{
+                width: 25%;
+                min-width: 150px;
+                height: 100%;
+                background-color: white;
+                padding-top: 1px;
+                position: fixed;
+                float: left;
+            }
+            #logo{
+                height: 80px;
+                margin-top: 30%;
+                background-image: url(./images2/logo.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position-x: center;
+            }
+            nav{
+                margin-top: 25%;
+            }
+            ul{
+                padding: 0px;
+            }
+            nav>ul>li{
+                list-style-type: none;
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+                padding-bottom: 25px;
+                text-align: center;
+            }
+            nav a{
+                text-decoration: none;
+                color: #444;
+            }
+            nav a:hover{
+                color: #ff6f77;
+            }
+            #wrap{
+                width: 50%;
+                min-width: 500px;
+                background: rgba(255, 255, 255, 0.5) ;
+                margin: 0 auto;
+                padding: 30px;
+                box-sizing: border-box;
+            }
+            #home{
+                height: 800px;
+                text-align: center;
+                font-family: 'Jua', sans-serif;
+            }
+            #home>div{
+                padding-top: 50%;
+            }
+            h1{
+                color: #584b4b;
+                margin: 0px;
+                padding-bottom: 30px;
+            }
+            #dvsite{
+                color: #584b4b;
+                text-decoration: none;
+                display: inline-block;
+                padding-bottom: 20px;
+            }
+            #dvsite:hover{
+                color: #ff6f77;
+            }
+            .dlbutton{
+                margin: 0 auto;
+                width: 180px;
+                height: 50px;
+                background-color: #ff6f77;
+                font-family: 'Jua', sans-serif;
+                text-align: center;
+                line-height: 50px;
+                color: white;
+            }
+            .dlbutton:hover{
+                background-color: #ffa6ab;
+                cursor: pointer;
+            }
+            #character{
+                height: 800px;
+                font-family: 'Jua', sans-serif;
+            }
+            h2{
+                color: #ff6f77;
+                text-align: center;
+                font-size: 36px;
+                margin: 0px;
+                padding-bottom: 50px;
+            }
+            img{
+                width: 40%;
+                display: block;
+                float: left;
+            }
+            #name{
+                height: 30px;
+                font-size: 24px;
+                text-align: center;
+                color: white;
+                background-color: #ff6f77;
+            }
+            #character ul{
+                font-family: 'Noto Sans KR', sans-serif;
+                padding: 0px;
+            }
+            #character li{
+                list-style: none;
+            }
+            .clear{
+                clear: both;
+            }
 
         </style>
     </head>
     <body>
         <header>
+            <div id="logo"></div>
             <nav>
                 <ul>
-                    <li><a href="">INDEX</a></li>
-                    <li><a href="">layout1</a></li>
-                    <li><a href="">layout2</a></li>
-                    <li><a href="">layout3</a></li>
-                    <li><a href="">DV</a></li>
+                    <li><a href="./index.html">INDEX</a></li>
+                    <li><a href="./layout1.html">LAYOUT1</a></li>
+                    <li><a href="./layout2.html">LAYOUT2</a></li>
+                    <li><a href="./layout3.html">LAYOUT3</a></li>
+                    <li><a href="./test.html">DEEPVOCAL</a></li>
                 </ul>
             </nav>
         </header>
         <div id="wrap">
             <section id="home">
-                <h1>DeepVocal 음원 이지음의 배포사이트 입니다.</h1>
-                <a href="https://www.deep-vocal.com/">→ Go to DeepVocal Official site</a>
-                <div class="dlbutton">DOWNLOAD</div>
+                <div>
+                    <h1>DeepVocal 음원 이지음의 배포사이트 입니다.</h1>
+                    <a href="https://www.deep-vocal.com/" id="dvsite">Go to DeepVocal Official site</a>
+                    <div class="dlbutton">DOWNLOAD</div>
+                </div>
             </section>
             <section id="character">
                 <h2>CHARACTER</h2>
                 <img src="images2/profile.png" alt="이지음">
                 <div>
-                    <h3>이지음/Lee jieum</h3>
-                    
+                    <div id="name">이지음/Lee jieum</div>
+                    <ul>
+                        <li>성별 여자</li>
+                        <li>나이 17세</li>
+                        <li>키 163cm</li>
+                        <li>생일 8/16(2013)</li>
+                        <li>성격 #명랑한 #기운찬 #장난끼넘치는 #호기심많은 #솔직한</li>
+                        <li>좋아하는것 그림그리기, 장난, 강아지, 복실복실한것</li>
+                        <li>싫어하는것 거짓말, 쓴맛</li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section id="demo">
+                <h2>DEMO</h2>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4VhdDnGF4JE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                        <h3>Run</h3>
+                        <div class="original">Original. Dr.Owl feat.SeeU</div>
+                        <div class="ust">UST. Nukude</div>
+                    </div>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1qjjrz9--Ko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                        <h3>Change Up!</h3>
+                        <div class="original">Original. SQUARE MUSIQ</div>
+                        <div class="ust">UST. GGOPU</div>
+                    </div>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/otoPcvijiKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                        <h3>사랑의 말3</h3>
+                        <div class="original">Original. DECO*27 feat.初音ミク</div>
+                        <div class="ust">UST. hugwalk</div>
+                    </div>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-Dz5-RNlLmE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                        <h3>Telepathy</h3>
+                        <div class="original">Original. 윤하(Younha)</div>
+                        <div class="ust">UST. GGOPU</div>
+                    </div>
                 </div>
             </section>
-            <section id="demo"></section>
-            <section id="dl"></section>
+            <section id="dl">
+                <div class="dlbutton">DOWNLOAD</div>
+            </section>
         </div>
+        <div class="clear"></div>
         <footer>
-
+            <div>Copyright 2019 GGOPU</div>
         </footer>
     </body>
 </html>
