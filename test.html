@@ -14,24 +14,24 @@
                 width: 25%;
                 min-width: 150px;
                 height: 100%;
+                min-height: 550px;
                 background-color: white;
-                padding-top: 1px;
-                position: fixed;
-                float: left;
-            }
-            #logo{
-                height: 80px;
-                margin-top: 30%;
                 background-image: url(./images2/logo.png);
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position-x: center;
+                background-position-y: 10%;
+                position: fixed;
+               
             }
+            
             nav{
-                margin-top: 25%;
+                position: relative;
+                top: calc(50% - 130px);
             }
             ul{
                 padding: 0px;
+                margin: 0px;
             }
             nav>ul>li{
                 list-style-type: none;
@@ -77,17 +77,20 @@
             #dvsite:hover{
                 color: #ff6f77;
             }
-            .dlbutton{
+            button{
+                display: block;
                 margin: 0 auto;
+                border: none;
                 width: 180px;
                 height: 50px;
                 background-color: #ff6f77;
                 font-family: 'Jua', sans-serif;
+                font-size: 14px;
                 text-align: center;
                 line-height: 50px;
                 color: white;
             }
-            .dlbutton:hover{
+            button:hover{
                 background-color: #ffa6ab;
                 cursor: pointer;
             }
@@ -99,13 +102,23 @@
                 color: #ff6f77;
                 text-align: center;
                 font-size: 36px;
-                margin: 0px;
-                padding-bottom: 50px;
+                font-family: 'Jua', sans-serif;
+                margin-top: 0px;
+                margin-bottom: 50px;
             }
-            img{
-                width: 40%;
-                display: block;
+            .image{
+                width: 45%;
+                height: 80%;
+                background-image: url(./images2/profile.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
                 float: left;
+            }
+            .profile{
+                width: 45%;
+                height: 500px;
+                float: right;
             }
             #name{
                 height: 30px;
@@ -120,16 +133,41 @@
             }
             #character li{
                 list-style: none;
+                margin-bottom: 20px;
+            }
+            .video{
+                width: 48%;
+                float: left;
+                background-color: #fff;
+                margin: 0px 4% 20px 0px;
+                font-family: 'Poppins', sans-serif;
+            }
+            .video:nth-child(3),.video:nth-child(5){
+                margin: 0px 0px 20px 0px;
+            }
+            h3{
+                margin: 0px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .original,.ust{
+                font-size: 10px;
+            }
+            footer{
+                width: 25%;
+                min-width: 150px;
+                height: 100%;
+                background-color: #584b4b;
             }
             .clear{
                 clear: both;
             }
+           
 
         </style>
     </head>
     <body>
         <header>
-            <div id="logo"></div>
             <nav>
                 <ul>
                     <li><a href="./index.html">INDEX</a></li>
@@ -145,13 +183,13 @@
                 <div>
                     <h1>DeepVocal 음원 이지음의 배포사이트 입니다.</h1>
                     <a href="https://www.deep-vocal.com/" id="dvsite">Go to DeepVocal Official site</a>
-                    <div class="dlbutton">DOWNLOAD</div>
+                    <button>DOWNLOAD</button>
                 </div>
             </section>
             <section id="character">
                 <h2>CHARACTER</h2>
-                <img src="images2/profile.png" alt="이지음">
-                <div>
+                <div class="image"></div>
+                <div class="profile">
                     <div id="name">이지음/Lee jieum</div>
                     <ul>
                         <li>성별 여자</li>
@@ -168,7 +206,7 @@
             <section id="demo">
                 <h2>DEMO</h2>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4VhdDnGF4JE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" src="https://www.youtube.com/embed/4VhdDnGF4JE?controls=0" frameborder="0" allow="controls=0 accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div>
                         <h3>Run</h3>
                         <div class="original">Original. Dr.Owl feat.SeeU</div>
@@ -176,7 +214,7 @@
                     </div>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1qjjrz9--Ko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" src="https://www.youtube.com/embed/1qjjrz9--Ko?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div>
                         <h3>Change Up!</h3>
                         <div class="original">Original. SQUARE MUSIQ</div>
@@ -184,7 +222,7 @@
                     </div>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/otoPcvijiKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" src="https://www.youtube.com/embed/otoPcvijiKg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div>
                         <h3>사랑의 말3</h3>
                         <div class="original">Original. DECO*27 feat.初音ミク</div>
@@ -192,19 +230,19 @@
                     </div>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-Dz5-RNlLmE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" src="https://www.youtube.com/embed/-Dz5-RNlLmE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div>
                         <h3>Telepathy</h3>
                         <div class="original">Original. 윤하(Younha)</div>
                         <div class="ust">UST. GGOPU</div>
                     </div>
                 </div>
+                <div class="clear"></div>
             </section>
             <section id="dl">
-                <div class="dlbutton">DOWNLOAD</div>
+                <button>DOWNLOAD</button>
             </section>
         </div>
-        <div class="clear"></div>
         <footer>
             <div>Copyright 2019 GGOPU</div>
         </footer>
