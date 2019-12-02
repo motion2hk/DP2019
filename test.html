@@ -14,15 +14,14 @@
                 width: 25%;
                 min-width: 150px;
                 height: 100%;
-                min-height: 550px;
+                min-height: 700px;
                 background-color: white;
                 background-image: url(./images2/logo.png);
-                background-size: contain;
+                background-size: 80%;
                 background-repeat: no-repeat;
                 background-position-x: center;
-                background-position-y: 10%;
+                background-position-y: 15%;
                 position: fixed;
-               
             }
             
             nav{
@@ -57,11 +56,13 @@
             }
             #home{
                 height: 800px;
+                padding-top: 1px;
+                box-sizing: border-box;
                 text-align: center;
                 font-family: 'Jua', sans-serif;
             }
             #home>div{
-                padding-top: 50%;
+                margin-top: calc(800px / 2 - 100px);
             }
             h1{
                 color: #584b4b;
@@ -107,7 +108,7 @@
                 margin-bottom: 50px;
             }
             .image{
-                width: 45%;
+                width: 48%;
                 height: 80%;
                 background-image: url(./images2/profile.png);
                 background-size: contain;
@@ -116,7 +117,7 @@
                 float: left;
             }
             .profile{
-                width: 45%;
+                width: 48%;
                 height: 500px;
                 float: right;
             }
@@ -126,6 +127,7 @@
                 text-align: center;
                 color: white;
                 background-color: #ff6f77;
+                margin-bottom: 50px;
             }
             #character ul{
                 font-family: 'Noto Sans KR', sans-serif;
@@ -145,8 +147,12 @@
             .video:nth-child(3),.video:nth-child(5){
                 margin: 0px 0px 20px 0px;
             }
+            .video>div{
+                padding: 5px 20px 10px 20px
+            }
             h3{
-                margin: 0px;
+                margin-top: 0px;
+                margin-bottom: 10px;
                 font-size: 14px;
                 font-weight: bold;
             }
@@ -154,10 +160,11 @@
                 font-size: 10px;
             }
             footer{
-                width: 25%;
-                min-width: 150px;
+                width: 200px;
                 height: 100%;
                 background-color: #584b4b;
+                position: fixed;
+                right: 0px;
             }
             .clear{
                 clear: both;
@@ -182,7 +189,7 @@
             <section id="home">
                 <div>
                     <h1>DeepVocal 음원 이지음의 배포사이트 입니다.</h1>
-                    <a href="https://www.deep-vocal.com/" id="dvsite">Go to DeepVocal Official site</a>
+                    <a href="https://www.deep-vocal.com/" title="https://www.deep-vocal.com/#/" id="dvsite">Go to DeepVocal Official site</a>
                     <button>DOWNLOAD</button>
                 </div>
             </section>
@@ -244,7 +251,7 @@
             </section>
         </div>
         <footer>
-            <div>Copyright 2019 GGOPU</div>
+            ggfhgfhg
         </footer>
     </body>
 </html>
