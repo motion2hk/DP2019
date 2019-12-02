@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="kr">
     <head>
-        <title>test</title>
+        <title>기말과제</title>
         <meta charset="utf-8">
         <style>
             @import url('https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR|Poppins&display=swap');
@@ -11,13 +11,13 @@
                 background-size: cover;
             }
             header{
-                width: 25%;
+                width: 20%;
                 min-width: 150px;
                 height: 100%;
-                min-height: 700px;
+                min-height: 600px;
                 background-color: white;
                 background-image: url(./images2/logo.png);
-                background-size: 80%;
+                background-size: 60%;
                 background-repeat: no-repeat;
                 background-position-x: center;
                 background-position-y: 15%;
@@ -47,7 +47,7 @@
                 color: #ff6f77;
             }
             #wrap{
-                width: 50%;
+                width: 60%;
                 min-width: 500px;
                 background: rgba(255, 255, 255, 0.5) ;
                 margin: 0 auto;
@@ -68,6 +68,7 @@
                 color: #584b4b;
                 margin: 0px;
                 padding-bottom: 30px;
+                font-size: 30px;
             }
             #dvsite{
                 color: #584b4b;
@@ -82,13 +83,10 @@
                 display: block;
                 margin: 0 auto;
                 border: none;
-                width: 180px;
-                height: 50px;
+                padding: 10px 50px;
                 background-color: #ff6f77;
                 font-family: 'Jua', sans-serif;
-                font-size: 14px;
-                text-align: center;
-                line-height: 50px;
+                font-size: 18px;
                 color: white;
             }
             button:hover{
@@ -102,7 +100,7 @@
             h2{
                 color: #ff6f77;
                 text-align: center;
-                font-size: 36px;
+                font-size: 40px;
                 font-family: 'Jua', sans-serif;
                 margin-top: 0px;
                 margin-bottom: 50px;
@@ -120,23 +118,30 @@
                 width: 48%;
                 height: 500px;
                 float: right;
+                box-sizing: border-box;
             }
             #name{
-                height: 30px;
+                height: 40px;
                 font-size: 24px;
+                line-height: 40px;
                 text-align: center;
                 color: white;
                 background-color: #ff6f77;
-                margin-bottom: 50px;
             }
             #character ul{
                 font-family: 'Noto Sans KR', sans-serif;
-                padding: 0px;
+                margin-top: 50px;
+                padding: 0px 30px;
             }
             #character li{
                 list-style: none;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
+            span{
+                font-weight: bold;
+                color: #ff6f77;
+            }
+            .tab { white-space: pre; }
             .video{
                 width: 48%;
                 float: left;
@@ -148,23 +153,42 @@
                 margin: 0px 0px 20px 0px;
             }
             .video>div{
-                padding: 5px 20px 10px 20px
+                padding: 10px 25px 15px 25px
             }
             h3{
                 margin-top: 0px;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
                 font-size: 14px;
                 font-weight: bold;
             }
             .original,.ust{
                 font-size: 10px;
             }
+            #dl{
+                margin-top: 50px;
+            }
             footer{
-                width: 200px;
+                width: 20%;
+                min-width: 150px;
                 height: 100%;
-                background-color: #584b4b;
+                background-color: #7e6666;
                 position: fixed;
                 right: 0px;
+                top: 0px;
+                text-align: right;
+            }
+            footer>div{
+                color: #fff;
+                font-family: 'Poppins', sans-serif;
+                font-size: 10px;
+                position: absolute;
+                right: 10px;
+            }
+            #icons{
+                bottom: 25px;
+            }
+            #copy{
+                bottom: 10px;
             }
             .clear{
                 clear: both;
@@ -189,7 +213,7 @@
             <section id="home">
                 <div>
                     <h1>DeepVocal 음원 이지음의 배포사이트 입니다.</h1>
-                    <a href="https://www.deep-vocal.com/" title="https://www.deep-vocal.com/#/" id="dvsite">Go to DeepVocal Official site</a>
+                    <a href="https://www.deep-vocal.com/" title="https://www.deep-vocal.com/#/" id="dvsite">>>Go to DeepVocal Official site</a>
                     <button>DOWNLOAD</button>
                 </div>
             </section>
@@ -199,13 +223,19 @@
                 <div class="profile">
                     <div id="name">이지음/Lee jieum</div>
                     <ul>
-                        <li>성별 여자</li>
-                        <li>나이 17세</li>
-                        <li>키 163cm</li>
-                        <li>생일 8/16(2013)</li>
-                        <li>성격 #명랑한 #기운찬 #장난끼넘치는 #호기심많은 #솔직한</li>
-                        <li>좋아하는것 그림그리기, 장난, 강아지, 복실복실한것</li>
-                        <li>싫어하는것 거짓말, 쓴맛</li>
+                        <li><span>성별</span><span class="tab">&#9;</span>여자</li>
+                        <li><span>나이</span><span class="tab">&#9;</span>17세</li>
+                        <li><span>키</span><span class="tab">&#9;</span>163cm</li>
+                        <li><span>생일</span><span class="tab">&#9;</span>8/16(2013)</li>
+                        <li><span>성격</span><span class="tab">&#9;</span>
+                            <span>#</span>명랑한
+                            <span>#</span>기운찬
+                            <span>#</span>장난끼넘치는
+                            <span>#</span>호기심많은
+                            <span>#</span>솔직한
+                        </li>
+                        <li><span>좋아하는것</span><span class="tab">&#9;</span>그림그리기, 장난, 강아지, 복실복실한것</li>
+                        <li><span>싫어하는것</span><span class="tab">&#9;</span>거짓말, 쓴맛</li>
                     </ul>
                 </div>
                 <div class="clear"></div>
@@ -225,7 +255,7 @@
                     <div>
                         <h3>Change Up!</h3>
                         <div class="original">Original. SQUARE MUSIQ</div>
-                        <div class="ust">UST. GGOPU</div>
+                        <div class="ust">UST. TABI</div>
                     </div>
                 </div>
                 <div class="video">
@@ -241,7 +271,7 @@
                     <div>
                         <h3>Telepathy</h3>
                         <div class="original">Original. 윤하(Younha)</div>
-                        <div class="ust">UST. GGOPU</div>
+                        <div class="ust">UST. TABI</div>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -251,7 +281,13 @@
             </section>
         </div>
         <footer>
-            ggfhgfhg
+            <div id="icons">
+                <img src="./images/layout3_icon1.png">
+                <img src="./images/layout3_icon2.png">
+                <img src="./images/layout3_icon3.png">
+                <img src="./images/layout3_icon4.png">
+            </div>
+            <div id="copy">Copyright 2019. TABI. All rights reserved.</div>
         </footer>
     </body>
 </html>
