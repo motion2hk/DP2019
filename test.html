@@ -2,9 +2,10 @@
 <html lang="kr">
     <head>
         <title>기말과제</title>
-        <meta charset="utf-8" name="viewport" content="width=divice-width", initial-scale="1.0">
+        <meta charset="utf-8">
         <style>
-            @import url('https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR|Poppins&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR:400,700|Poppins&display=swap&subset=korean');
+
             body{
                 margin: 0px;
                 background-image: url(./images2/BG.jpg);
@@ -13,7 +14,6 @@
             }
             header{
                 width: 20%;
-
                 height: 100%;
                 min-height: 600px;
                 background-color: white;
@@ -22,6 +22,7 @@
                 background-repeat: no-repeat;
                 background-position-x: center;
                 background-position-y: 15%;
+                overflow: hidden;
                 position: fixed;
             }
             
@@ -131,6 +132,7 @@
                 text-align: center;
                 color: white;
                 background-color: #ff6f77;
+                margin-bottom: 50px;
             }
             #character ul{
                 font-family: 'Noto Sans KR', sans-serif;
@@ -146,6 +148,20 @@
                 color: #ff6f77;
             }
             .tab { white-space: pre; }
+            table{
+                padding: 0px 10px;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size: 16px;
+            }
+            th, td{
+                padding: 5px 0px;
+                text-align: left;
+            }
+            th{
+                width: 35%;
+                
+                color: #ff6f77;
+            }
             .video{
                 width: 48%;
                 float: left;
@@ -179,6 +195,7 @@
                 right: 0px;
                 top: 0px;
                 text-align: right;
+                overflow: hidden;
             }
             footer>div{
                 color: #fff;
@@ -221,21 +238,29 @@
                     <div class="image"></div>
                     <div class="profile">
                         <div id="name">이지음/Lee jieum</div>
-                        <ul>
-                            <li><span>성별</span><span class="tab">&#9;</span>여자</li>
-                            <li><span>나이</span><span class="tab">&#9;</span>17세</li>
-                            <li><span>키</span><span class="tab">&#9;</span>163cm</li>
-                            <li><span>생일</span><span class="tab">&#9;</span>8/16(2013)</li>
-                            <li><span>성격</span><span class="tab">&#9;</span>
-                                <span>#</span>명랑한
-                                <span>#</span>기운찬
-                                <span>#</span>장난끼넘치는
-                                <span>#</span>호기심많은
-                                <span>#</span>솔직한
-                            </li>
-                            <li><span>좋아하는것</span><span class="tab">&#9;</span>그림그리기, 장난, 강아지, 복실복실한것</li>
-                            <li><span>싫어하는것</span><span class="tab">&#9;</span>거짓말, 쓴맛</li>
-                        </ul>
+                        <table>
+                            <tr>
+                                <th>성별</th><td>여자</td>
+                            </tr>
+                            <tr>
+                                <th>나이</th><td>17세</td>
+                            </tr>
+                            <tr>
+                                <th>키</th><td>163cm</td>
+                            </tr>
+                            <tr>
+                                <th>생일</th><td>8/16(2013)</td>
+                            </tr>
+                            <tr>
+                                <th>성격</th><td><span>#</span>명랑한<span>#</span>기운찬<span>#</span>장난기넘치는<span>#</span>호기심많은<span>#</span>솔직한</td>
+                            </tr>
+                            <tr>
+                                <th>좋아하는것</th><td>그림그리기, 장난, 강아지, 복실복실한것</td>
+                            </tr>
+                            <tr>
+                                <th>싫어하는것</th><td>거짓말, 쓴맛</td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="clear"></div>
                 </section>
