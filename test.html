@@ -2,7 +2,7 @@
 <html lang="kr">
     <head>
         <title>기말과제</title>
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" name="viewport" content="width=800px, initial-scale=1.0">
         <style>
             @import url('https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR|Poppins&display=swap');
             body{
@@ -11,9 +11,13 @@
                 background-size: cover;
                 background-attachment: fixed;
             }
+            #wrap{
+                
+                position: relative;
+            }
             header{
                 width: 20%;
-                min-width: 100px;
+                min-width: 150px;
                 height: 100%;
                 min-height: 600px;
                 background-color: white;
@@ -47,10 +51,12 @@
             nav a:hover{
                 color: #ff6f77;
             }
-            #wrap{
+            #contents{
                 position: absolute;
+                z-index: -5;
                 left: calc(50% - 30%);
                 width: 60%;
+                
                 background: rgba(255, 255, 255, 0.5) ;
                 
                 padding: 30px;
@@ -171,7 +177,7 @@
             }
             footer{
                 width: 20%;
-                min-width: 100px;
+                min-width: 150px;
                 height: 100%;
                 background-color: #7e6666;
                 position: fixed;
@@ -184,13 +190,8 @@
                 font-family: 'Poppins', sans-serif;
                 font-size: 10px;
                 position: absolute;
-                right: 10px;
-            }
-            #icons{
-                bottom: 25px;
-            }
-            #copy{
                 bottom: 10px;
+                right: 10px;
             }
             .clear{
                 clear: both;
@@ -200,96 +201,100 @@
         </style>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">INDEX</a></li>
-                    <li><a href="./layout1.html">LAYOUT1</a></li>
-                    <li><a href="./layout2.html">LAYOUT2</a></li>
-                    <li><a href="./layout3.html">LAYOUT3</a></li>
-                    <li><a href="./test.html">DEEPVOCAL</a></li>
-                </ul>
-            </nav>
-        </header>
         <div id="wrap">
-            <section id="home">
-                <div>
-                    <h1>DeepVocal 음원 이지음의 배포사이트 입니다.</h1>
-                    <a href="https://www.deep-vocal.com/" title="https://www.deep-vocal.com/#/" id="dvsite">>>Go to DeepVocal Official site</a>
-                    <button>DOWNLOAD</button>
-                </div>
-            </section>
-            <section id="character">
-                <h2>CHARACTER</h2>
-                <div class="image"></div>
-                <div class="profile">
-                    <div id="name">이지음/Lee jieum</div>
+            <header>
+                <nav>
                     <ul>
-                        <li><span>성별</span><span class="tab">&#9;</span>여자</li>
-                        <li><span>나이</span><span class="tab">&#9;</span>17세</li>
-                        <li><span>키</span><span class="tab">&#9;</span>163cm</li>
-                        <li><span>생일</span><span class="tab">&#9;</span>8/16(2013)</li>
-                        <li><span>성격</span><span class="tab">&#9;</span>
-                            <span>#</span>명랑한
-                            <span>#</span>기운찬
-                            <span>#</span>장난끼넘치는
-                            <span>#</span>호기심많은
-                            <span>#</span>솔직한
-                        </li>
-                        <li><span>좋아하는것</span><span class="tab">&#9;</span>그림그리기, 장난, 강아지, 복실복실한것</li>
-                        <li><span>싫어하는것</span><span class="tab">&#9;</span>거짓말, 쓴맛</li>
+                        <li><a href="./index.html">INDEX</a></li>
+                        <li><a href="./layout1.html">LAYOUT1</a></li>
+                        <li><a href="./layout2.html">LAYOUT2</a></li>
+                        <li><a href="./layout3.html">LAYOUT3</a></li>
+                        <li><a href="./test.html">DEEPVOCAL</a></li>
                     </ul>
-                </div>
-                <div class="clear"></div>
-            </section>
-            <section id="demo">
-                <h2>DEMO</h2>
-                <div class="video">
-                    <iframe width="100%" src="https://www.youtube.com/embed/4VhdDnGF4JE?controls=0" frameborder="0" allow="controls=0 accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </nav>
+            </header>
+            <div id="contents">
+                <section id="home">
                     <div>
-                        <h3>Run</h3>
-                        <div class="original">Original. Dr.Owl feat.SeeU</div>
-                        <div class="ust">UST. Nukude</div>
+                        <h1>DeepVocal 음원 이지음의 배포사이트 입니다.</h1>
+                        <a href="https://www.deep-vocal.com/" title="https://www.deep-vocal.com/#/" id="dvsite">>>Go to DeepVocal Official site</a>
+                        <button>DOWNLOAD</button>
                     </div>
-                </div>
-                <div class="video">
-                    <iframe width="100%" src="https://www.youtube.com/embed/1qjjrz9--Ko?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div>
-                        <h3>Change Up!</h3>
-                        <div class="original">Original. SQUARE MUSIQ</div>
-                        <div class="ust">UST. TABI</div>
+                </section>
+                <section id="character">
+                    <h2>CHARACTER</h2>
+                    <div class="image"></div>
+                    <div class="profile">
+                        <div id="name">이지음/Lee jieum</div>
+                        <ul>
+                            <li><span>성별</span><span class="tab">&#9;</span>여자</li>
+                            <li><span>나이</span><span class="tab">&#9;</span>17세</li>
+                            <li><span>키</span><span class="tab">&#9;</span>163cm</li>
+                            <li><span>생일</span><span class="tab">&#9;</span>8/16(2013)</li>
+                            <li><span>성격</span><span class="tab">&#9;</span>
+                                <span>#</span>명랑한
+                                <span>#</span>기운찬
+                                <span>#</span>장난끼넘치는
+                                <span>#</span>호기심많은
+                                <span>#</span>솔직한
+                            </li>
+                            <li><span>좋아하는것</span><span class="tab">&#9;</span>그림그리기, 장난, 강아지, 복실복실한것</li>
+                            <li><span>싫어하는것</span><span class="tab">&#9;</span>거짓말, 쓴맛</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="video">
-                    <iframe width="100%" src="https://www.youtube.com/embed/otoPcvijiKg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div>
-                        <h3>사랑의 말3</h3>
-                        <div class="original">Original. DECO*27 feat.初音ミク</div>
-                        <div class="ust">UST. hugwalk</div>
+                    <div class="clear"></div>
+                </section>
+                <section id="demo">
+                    <h2>DEMO</h2>
+                    <div class="video">
+                        <iframe width="100%" src="https://www.youtube.com/embed/4VhdDnGF4JE?controls=0" frameborder="0" allow="controls=0 accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div>
+                            <h3>Run</h3>
+                            <div class="original">Original. Dr.Owl feat.SeeU</div>
+                            <div class="ust">UST. Nukude</div>
+                        </div>
                     </div>
-                </div>
-                <div class="video">
-                    <iframe width="100%" src="https://www.youtube.com/embed/-Dz5-RNlLmE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div>
-                        <h3>Telepathy</h3>
-                        <div class="original">Original. 윤하(Younha)</div>
-                        <div class="ust">UST. TABI</div>
+                    <div class="video">
+                        <iframe width="100%" src="https://www.youtube.com/embed/1qjjrz9--Ko?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div>
+                            <h3>Change Up!</h3>
+                            <div class="original">Original. SQUARE MUSIQ</div>
+                            <div class="ust">UST. TABI</div>
+                        </div>
                     </div>
-                </div>
-                <div class="clear"></div>
-            </section>
-            <section id="dl">
-                <button>DOWNLOAD</button>
-            </section>
-        </div>
-        <footer>
-            <div id="icons">
-                <img src="./images/layout3_icon1.png">
-                <img src="./images/layout3_icon2.png">
-                <img src="./images/layout3_icon3.png">
-                <img src="./images/layout3_icon4.png">
+                    <div class="video">
+                        <iframe width="100%" src="https://www.youtube.com/embed/otoPcvijiKg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div>
+                            <h3>사랑의 말3</h3>
+                            <div class="original">Original. DECO*27 feat.初音ミク</div>
+                            <div class="ust">UST. hugwalk</div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <iframe width="100%" src="https://www.youtube.com/embed/-Dz5-RNlLmE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div>
+                            <h3>Telepathy</h3>
+                            <div class="original">Original. 윤하(Younha)</div>
+                            <div class="ust">UST. TABI</div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+                <section id="dl">
+                    <button>DOWNLOAD</button>
+                </section>
             </div>
-            <div id="copy">Copyright 2019. TABI. All rights reserved.</div>
-        </footer>
+            <footer>
+                <div>
+                    <div id="icons">
+                    <img src="./images/layout3_icon1.png">
+                    <img src="./images/layout3_icon2.png">
+                    <img src="./images/layout3_icon3.png">
+                    <img src="./images/layout3_icon4.png">
+                    </div>
+                    <div id="copy">Copyright 2019. TABI. All rights reserved.</div>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
